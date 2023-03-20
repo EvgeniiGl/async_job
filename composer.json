@@ -1,0 +1,24 @@
+{
+  "name": "evgeniigl/async_job",
+  "description": "Library for performing tasks stored in the SQL database",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Glechikov Evgeniy",
+      "email": "krotkof@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "EvgeniyGl\\AsyncJob\\": "src/"
+    }
+  },
+  "require": {},
+  "scripts": {
+    "check-style": "phpcs -p --standard=PSR12 config/ src/ tests/",
+    "fix-style": "phpcbf -p --standard=PSR12 config/ src/ tests/",
+    "test": "phpunit"
+  }
+}
